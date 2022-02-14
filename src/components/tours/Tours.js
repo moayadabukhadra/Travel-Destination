@@ -1,29 +1,18 @@
 
+import Tour from './Tour/Tour';
+
 function Tours(props){
- 
+    
     return(
-        <>
-        {
-            props.data.map(tour=>{
-                return(
-                    <>
-                   <p>{tour.name}</p>
-                    <img src={tour.image} />
-                    
-                    
-
-                    </>
-
-
-
-                );
-            })
-        }
-          
+       <>
+       <Tour/>.     
         </>
-        
+
+
+    
+    )}
             
-    );
-}
+  
+
 export default Tours;
 
