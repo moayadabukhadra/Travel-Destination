@@ -2,7 +2,7 @@
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import toursData from '/home/moayad/travel-destination/src/data/db.json'
+import toursData from '../../data/db.json'
 import Tours from '../tours/Tours';
 
 
