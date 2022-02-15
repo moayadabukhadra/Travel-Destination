@@ -1,29 +1,23 @@
+import { Link } from 'react-router-dom';
+import React from 'react';
+import Tour from './Tour/Tour';
 
-function Tours(props){
- 
+const Tours =({tours})=>{
+    
     return(
-        <>
-        {
-            props.data.map(tour=>{
-                return(
-                    <>
-                   <p>{tour.name}</p>
-                    <img src={tour.image} />
-                    
-                    
+        <div className='toursList'>
+            {
+        tours.map((tour)=>(
+       <div className='tour-des' key={tour.id}>
+           <Link to={`/city/${tour.id}`}>
+       <Tour tour={tour}/> 
+       </Link> 
+        </div>
 
-                    </>
-
-
-
-                );
-            })
-        }
-          
-        </>
-        
-            
-    );
+        ))
 }
+       </div>     
+    )}
+
 export default Tours;
 

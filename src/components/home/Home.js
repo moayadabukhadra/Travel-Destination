@@ -1,19 +1,15 @@
-
-
+import Tours from '../tours/Tours';
+import data from '../../data/db.json'
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import toursData from '../../data/db.json'
-import Tours from '../tours/Tours';
-
-
 function Home() {
     
   return (
-    <>
+ <div className='home'>
 <Header/>
-<Tours data={toursData}/>
-<Footer/>
-    </>
+   <Tours tours={data} title='All Blogs'/>
+   <Footer/>
+ </div>
   
   );
 }
