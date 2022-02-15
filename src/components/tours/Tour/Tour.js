@@ -1,33 +1,25 @@
-import toursData from '../../../data/db.json'
+import React from "react";
 
 
   
-function Tour(){
-    
+const Tour = ({tour})=>{
 
     return(
-        <>
-        {
-            toursData.map((tour ,index)=>{
 
-                return(
-                    <>
-                   <p>{tour.name}</p>
-                    <img src={tour.image}></img>
-                    
-                    
+        <div className="name" style={{backgroundColor:"blueviolet"}}>
+<h2>
+    {tour.name}
+</h2>
+       
+        <div className="image">
+            <img src={tour.image} style={{borderRadius:300}}/>
 
-                    </>
+        </div>
+        </div>
+    )
 
 
-
-                );
-            })
-        }
-          
-        </>
-        
-            
-    );
 }
+    
+
 export default Tour;

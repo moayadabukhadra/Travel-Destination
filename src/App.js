@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import Home from './components/home/Home';
-import Tours from './components/tours/Tours';
-import {Routes, Route} from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar'
+import TourDetail from './components/TourDetail/TourDetail'
+import Home from './components/home/Home'
+import {Routes, Route , Link} from 'react-router-dom';
 
 function App() {
  
@@ -10,7 +10,7 @@ function App() {
     <>
 <Routes>
 <Route path="/" element={<Home/>} />
-<Route path="/city/:id"  element={<Tours/>} />
+<Route path="/city/:id"  element={<TourDetail/>} />
 </Routes>
     </>
   
