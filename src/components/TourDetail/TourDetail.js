@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
   import data from '../../data/db.json'
   import { useState } from "react";
+  import Header from "../Header/Header";
 
   const TourDetail = (props)=>{
 let { id } = useParams();
@@ -22,7 +23,9 @@ const datatour= TourData();
 const [readMore,setReadMore]=useState(false);
 
 return(
+ 
 <div className="tourDetails">
+<Header/>
 <article>
 <h2>{datatour[0].name}</h2>
 <p style={{color:"red"}}>
